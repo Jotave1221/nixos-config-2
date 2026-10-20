@@ -8,22 +8,13 @@
   },
 
   "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "packages",
-    "shell",
-    "de",
-    "wm",
-    "terminal",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "break",
-    "colors"
+    { "type": "os", "format": "{name}" },
+    { "type": "kernel", "format": "{sysname} {version}" },
+    { "type": "shell", "format": "{pretty-name}" },
+    { "type": "de", "format": "{pretty-name}" },
+    { "type": "wm", "format": "{pretty-name}" },
+    { "type": "terminal", "format": "{pretty-name}" },
+    { "type": "cpu", "format": "{name}" },
+    { "type": "memory", "format": "{used}/{total}" }
   ]
 }

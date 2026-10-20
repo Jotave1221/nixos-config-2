@@ -16,6 +16,8 @@
     extraConfig.init.defaultBranch = "main";
   };
 
+  xdg.configFile."fastfetch/config.jsonc".source = ./configs/fastfetch.jsonc;
+
   programs.home-manager.enable = true;
 
     programs.bash = {

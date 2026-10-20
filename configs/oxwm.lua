@@ -54,8 +54,8 @@ local blocks = {
     
     oxwm.bar.block.shell({
         format = "{}",
-        command = "echo 'tony-btw fuck you'",
-        interval = 1,
+        command = "uname -r",
+        interval = 60,
         color = colors.red,
         underline = true,
     }),

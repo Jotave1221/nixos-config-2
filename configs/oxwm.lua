@@ -212,7 +212,7 @@ oxwm.bar.set_scheme_urgent(colors.red, colors.bg, colors.red)
 
 oxwm.key.bind({ modkey }, "T", oxwm.spawn_terminal())
 -- Launch Dmenu
-oxwm.key.bind({ modkey }, "Space", oxwm.spawn({ "sh", "-c", "rofi _show drun" }))
+oxwm.key.bind({ modkey }, "Space", oxwm.spawn({ "sh", "-c", "rofi -show drun" }))
 -- Copy screenshot to clipboard
 oxwm.key.bind({ modkey }, "S", oxwm.spawn({ "sh", "-c", "maim -s | xclip -selection clipboard -t image/png" }))
 oxwm.key.bind({ modkey }, "Q", oxwm.client.kill())

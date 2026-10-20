@@ -65,7 +65,7 @@ local blocks = {
     }),
     oxwm.bar.block.shell({
         format = "{}",
-        command = "uname -r",
+        command = "sh -C 'uname -r'",
         interval = 999999999,
         color = colors.red,
         underline = true,

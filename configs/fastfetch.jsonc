@@ -9,7 +9,7 @@
 
   "modules": [
     { "type": "os", "format": "{name}" },
-    { "type": "kernel", "format": "{sysname} {version}" },
+    { "type": "kernel", "format": "{release}" },
     { "type": "shell", "format": "{pretty-name}" },
     { "type": "de", "format": "{pretty-name}" },
     { "type": "wm", "format": "{pretty-name}" },

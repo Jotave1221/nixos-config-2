@@ -67,7 +67,8 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  
+  services.xserver.windowManager.oxwm.enable = true;
+
   environment.systemPackages = with pkgs; [
     vim 
     wget
@@ -76,7 +77,6 @@
     stremio-linux-shell
     git
     gh
-    oxwm
     rofi
   ];
 

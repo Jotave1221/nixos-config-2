@@ -76,6 +76,8 @@
     stremio-linux-shell
     git
     gh
+    oxwm
+    rofi
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

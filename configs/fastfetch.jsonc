@@ -7,27 +7,27 @@
   },
 
   "modules": [
-    { "type": "custom", "format": "┌───────── System ─────────┐" },
+    { "type": "custom", "format": "┌─────────── System ───────────┐" },
     "break",
     { "type": "os", "format": "{name}" },
     { "type": "kernel", "format": "Linux {release}" },
     "break",
-    { "type": "custom", "format": "└──────────────────────────┘" },
+    { "type": "custom", "format": "└──────────────────────────────┘" },
     "break",
-    { "type": "custom", "format": "┌──────── Session ─────────┐" },
+    { "type": "custom", "format": "┌────────── Session ───────────┐" },
     "break",
     { "type": "shell", "format": "{pretty-name}" },
     { "type": "de", "format": "{pretty-name}" },
     { "type": "wm", "format": "{pretty-name}" },
     { "type": "terminal", "format": "{pretty-name}" },
     "break",
-    { "type": "custom", "format": "└──────────────────────────┘" },
+    { "type": "custom", "format": "└──────────────────────────────┘" },
     "break",
-    { "type": "custom", "format": "┌───────── Status ─────────┐" },
+    { "type": "custom", "format": "┌─────────── Status ───────────┐" },
     "break",
     { "type": "cpu", "format": "{name}" },
     { "type": "memory", "format": "{used}/{total}" },
     "break",
-    { "type": "custom", "format": "└──────────────────────────┘" }
+    { "type": "custom", "format": "└──────────────────────────────┘" }
   ]
 }

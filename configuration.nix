@@ -69,6 +69,10 @@
 
   services.xserver.windowManager.oxwm.enable = true;
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+  ];
+
   environment.systemPackages = with pkgs; [
     vim 
     wget

@@ -52,7 +52,7 @@ local bar_font = "monospace:style=Bold:size=10"
 -- Similar to widgets in qtile, or dwmblocks
 local blocks = {
     oxwm.bar.block.ram({
-        format = "Ram: {used}/{total} GB",
+        format = "Ram: {used}/{total}GB",
         interval = 5,
         color = colors.light_blue,
         underline = true,

@@ -8,13 +8,21 @@
   },
 
   "modules": [
+    { "type": "custom", "format": "┌──────── System ────────┐" },
     { "type": "os", "format": "{name}" },
-    { "type": "kernel", "format": "{release}" },
+    { "type": "kernel", "format": "Linux {release}" },
+    { "type": "custom", "format": "└──────────────────────────┘" },
+    "break",
+    { "type": "custom", "format": "┌──────── Session ────────┐" },
     { "type": "shell", "format": "{pretty-name}" },
     { "type": "de", "format": "{pretty-name}" },
     { "type": "wm", "format": "{pretty-name}" },
     { "type": "terminal", "format": "{pretty-name}" },
+    { "type": "custom", "format": "└──────────────────────────┘" },
+    "break",
+    { "type": "custom", "format": "┌──────── Status ────────┐" },
     { "type": "cpu", "format": "{name}" },
-    { "type": "memory", "format": "{used}/{total}" }
+    { "type": "memory", "format": "{used}/{total}" },
+    { "type": "custom", "format": "└──────────────────────────┘" }
   ]
 }

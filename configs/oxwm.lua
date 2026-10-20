@@ -53,7 +53,7 @@ local bar_font = "monospace:style=Bold:size=10"
 local blocks = {
     
     oxwm.bar.block.shell({
-        format = "{}",
+        format = " {}",
         command = "uname -r",
         interval = 60,
         color = colors.red,

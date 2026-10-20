@@ -18,6 +18,8 @@
 
   xdg.configFile."fastfetch/config.jsonc".source = ./configs/fastfetch.jsonc;
 
+  xdg.configFile."oxwm/config.lua".source = ./configs/oxwm.lua;
+
   programs.home-manager.enable = true;
 
     programs.bash = {

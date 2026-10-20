@@ -51,10 +51,12 @@ local bar_font = "monospace:style=Bold:size=10"
 -- Define your blocks
 -- Similar to widgets in qtile, or dwmblocks
 local blocks = {
-    oxwm.bar.block.ram({
-        format = "Ram: {used}/{total}GB",
-        interval = 5,
-        color = colors.light_blue,
+    
+    oxwm.bar.block.shell({
+        format = "{}",
+        command = "sh -C 'uname -r'",
+        interval = 999999999,
+        color = colors.red,
         underline = true,
     }),
     oxwm.bar.block.static({
@@ -63,13 +65,13 @@ local blocks = {
         color = colors.lavender,
         underline = false,
     }),
-    oxwm.bar.block.shell({
-        format = "{}",
-        command = "sh -C 'uname -r'",
-        interval = 999999999,
-        color = colors.red,
+    oxwm.bar.block.ram({
+        format = "Ram: {used}/{total}GB",
+        interval = 5,
+        color = colors.light_blue,
         underline = true,
     }),
+
     oxwm.bar.block.static({
         text = "│",
         interval = 999999999,

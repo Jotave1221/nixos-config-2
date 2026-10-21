@@ -61,6 +61,9 @@
     };
 
     initExtra = ''
+
+      fastfetch
+
       rebuild() {
         cd ~/nixos-config || return
         nix flake update

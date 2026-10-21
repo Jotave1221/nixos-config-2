@@ -96,6 +96,7 @@
     figlet
     cowsay
     fortune
+    blueman
   ];
 
   services.xserver.displayManager.sessionCommands = ''
@@ -111,6 +112,6 @@
 
   services.openssh.enable = true;
 
-  system.stateVersion = "26.05"; # Did you read the comment?
+  system.stateVersion = "26.05";
 
 }

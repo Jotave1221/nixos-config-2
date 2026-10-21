@@ -85,6 +85,12 @@
     arandr
   ];
 
+  services.xserver.displayManager.sessionCommands = ''
+    if ${pkgs.xorg.xrandr}/bin/xrandr | grep -q "^HDMI-1 connected"; then
+      ${pkgs.xorg.xrandr}/bin/xrandr --output HDMI-1 --auto --primary --pos 0x0 --output eDP-1 --off
+    fi
+  '';
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   virtualisation.virtualbox.host.enable = true;

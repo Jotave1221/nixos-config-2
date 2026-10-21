@@ -62,7 +62,7 @@
 
     initExtra = ''
 
-      fastfetch
+      pfetch
 
       rebuild() {
         cd ~/nixos-config || return

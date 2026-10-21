@@ -82,6 +82,7 @@
     git
     gh
     rofi
+    arandr
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

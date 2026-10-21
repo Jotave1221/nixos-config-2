@@ -34,6 +34,12 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
+  programs.sway = {
+    enable = true;
+    # Inclui variáveis de ambiente e wrappers recomendados (como o GTK).
+    wrapperFeatures.gtk = true;
+  };
+
   services.xserver.xkb = {
     layout = "us";
     variant = "";
@@ -88,6 +94,8 @@
     cava
     cmatrix
     figlet
+    cowsay
+    fortune
   ];
 
   services.xserver.displayManager.sessionCommands = ''

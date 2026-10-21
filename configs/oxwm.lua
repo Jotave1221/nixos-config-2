@@ -46,7 +46,7 @@ local tags = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }
 -- local tags = { "", "󰊯", "", "", "󰙯", "󱇤", "", "󱘶", "󰧮" } -- Example of nerd font icon tags
 
 -- Font for the status bar (use "fc-list" to see available fonts)
-local bar_font = "JetBrainsMono Nerd Font Propo:style=Bold:size=10"
+local bar_font = "monospace:style=Bold:size=10"
 
 -- Define your blocks
 -- Similar to widgets in qtile, or dwmblocks

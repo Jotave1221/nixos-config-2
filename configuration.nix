@@ -75,6 +75,13 @@
 
   services.xserver.windowManager.oxwm.enable = true;
 
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+
+  services.blueman.enable = true;
+
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
   ];

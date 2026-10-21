@@ -84,6 +84,9 @@
     rofi
     arandr
     btop
+    st
+    cava
+    cmatrix
   ];
 
   services.xserver.displayManager.sessionCommands = ''

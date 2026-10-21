@@ -327,9 +327,9 @@ oxwm.key.chord({
     { {},         "T" }
 }, oxwm.spawn_terminal())
 
-oxwm.key.bind({}, "XF86AudioRaiseVolume", oxwm.spawn("pamixer -i 5"))
-oxwm.key.bind({}, "XF86AudioLowerVolume", oxwm.spawn("pamixer -d 5"))
-oxwm.key.bind({}, "XF86AudioMute", oxwm.spawn("pamixer -t"))
+oxwm.key.bind({}, "XF86AudioRaiseVolume", oxwm.spawn("vol up"))
+oxwm.key.bind({}, "XF86AudioLowerVolume", oxwm.spawn("vol down"))
+oxwm.key.bind({}, "XF86AudioMute", oxwm.spawn("vol mute"))
 
 -------------------------------------------------------------------------------
 -- Autostart

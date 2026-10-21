@@ -2,7 +2,7 @@
 {
   home.username = "jotave";
   home.homeDirectory = "/home/jotave";
-
+  services.dunst.enable = true;
   home.stateVersion = "26.05";
 
   home.packages = with pkgs; [
@@ -11,6 +11,22 @@
     pavucontrol
     pamixer
     feh
+    (pkgs.writeShellScriptBin "vol" ''
+      case "$1" in
+        up) ${pkgs.pamixer}/bin/pamixer -i 5 ;;
+        down) ${pkgs.pamixer}/bin/pamixer -d 5 ;;
+        mute) ${pkgs.pamixer}/bin/pamixer -t ;;
+      esac
+      vol=$(${pkgs.pamixer}/bin/pamixer --get-volume)
+      if [ "$(${pkgs.pamixer}/bin/pamixer --get-mute)" = true ]; then
+        msg="Mudo"
+      else
+        msg="Volume: $vol%"
+      fi
+      ${pkgs.libnotify}/bin/notify-send \
+        -h string:x-dunst-stack-tag:volume \
+        -h int:value:"$vol" "$msg"
+    '')
   ];
 
   home.file."Pictures/wallpaper.jpeg".source = ./configs/wallpaper.jpeg;

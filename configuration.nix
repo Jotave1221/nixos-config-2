@@ -106,6 +106,7 @@
     python3
     blueman
     pfetch
+    gcc
   ];
 
   services.xserver.displayManager.sessionCommands = ''

@@ -103,6 +103,7 @@
     figlet
     cowsay
     fortune
+    python3
     blueman
   ];
 

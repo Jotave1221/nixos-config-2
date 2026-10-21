@@ -87,6 +87,7 @@
     st
     cava
     cmatrix
+    figlet
   ];
 
   services.xserver.displayManager.sessionCommands = ''

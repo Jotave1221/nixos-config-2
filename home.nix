@@ -8,7 +8,12 @@
   home.packages = with pkgs; [
     pkgs.fastfetch
     gh
+    pavucontrol
+    pamixer
+    feh
   ];
+
+  home.file."Pictures/wallpaper.jpeg".source = ./configs/wallpaper.jpeg;
 
   programs.gh = {
     enable = true;

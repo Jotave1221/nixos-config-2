@@ -11,7 +11,7 @@
 
 ---Load type definitions for LSP
 ---@module 'oxwm'
-
+oxwm.autostart("feh --bg-fill ~/Pictures/wallpaper.jpeg")
 -------------------------------------------------------------------------------
 -- Variables
 -------------------------------------------------------------------------------
@@ -326,6 +326,10 @@ oxwm.key.chord({
     { { modkey }, "Space" },
     { {},         "T" }
 }, oxwm.spawn_terminal())
+
+oxwm.key.bind({}, "XF86AudioRaiseVolume", oxwm.spawn("pamixer -i 5"))
+oxwm.key.bind({}, "XF86AudioLowerVolume", oxwm.spawn("pamixer -d 5"))
+oxwm.key.bind({}, "XF86AudioMute", oxwm.spawn("pamixer -t"))
 
 -------------------------------------------------------------------------------
 -- Autostart

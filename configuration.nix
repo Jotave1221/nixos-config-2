@@ -83,6 +83,7 @@
     gh
     rofi
     arandr
+    btop
   ];
 
   services.xserver.displayManager.sessionCommands = ''

@@ -53,7 +53,7 @@ local bar_font = "JetBrainsMono Nerd Font Propo:style=Bold:size=12"
 local blocks = {
     
     oxwm.bar.block.shell({
-        format = " {}",
+        format = "\u{e712} {}",
         command = "uname -r",
         interval = 60,
         color = colors.red,

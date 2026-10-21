@@ -105,6 +105,7 @@
     fortune
     python3
     blueman
+    pfetch
   ];
 
   services.xserver.displayManager.sessionCommands = ''

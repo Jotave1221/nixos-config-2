@@ -11,6 +11,7 @@
     pavucontrol
     pamixer
     feh
+    libnotify
     (pkgs.writeShellScriptBin "vol" ''
       case "$1" in
         up) ${pkgs.pamixer}/bin/pamixer -i 5 ;;
